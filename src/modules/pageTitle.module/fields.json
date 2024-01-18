@@ -1,37 +1,4 @@
-[
-  {
-    "default": 20,
-    "min": 0,
-    "max": 100,
-    "display": "slider",
-    "label": "Starting number of reasons",
-    "locked": false,
-    "name": "initial_count",
-    "required": false,
-    "type": "number"
-  },
-  {
-  "id" : "edc5e0c0-bd92-0ff6-8b98-4d79b73685b5",
-  "name" : "image",
-  "display_width" : null,
-  "label" : "Image",
-  "required" : false,
-  "locked" : false,
-  "responsive" : true,
-  "resizable" : false,
-  "show_loading" : false,
-  "type" : "image",
-  "default" : {
-    "size_type" : "auto",
-    "src" : "https://6891566.fs1.hubspotusercontent-na1.net/hubfs/6891566/Share%20Sales%20Direct/10.png",
-    "alt" : "10",
-    "loading" : "disabled",
-    "width" : 88,
-    "height" : 129,
-    "max_width" : 88,
-    "max_height" : 129
-  }
-}, {
+[ {
   "id" : "774e23e0-3cea-8f4a-5607-5b171bafa322",
   "name" : "title",
   "display_width" : null,
@@ -42,14 +9,39 @@
   "allow_new_line" : false,
   "show_emoji_picker" : false,
   "type" : "text",
-  "default" : "Our lowest-price guarantee"
+  "default" : "Acquired Through Demutualisation"
 }, {
-  "id" : "be9afa7b-59a5-8802-1c43-656781d9b793",
-  "name" : "content",
+  "id" : "a5682478-ea24-ea51-2745-84559cae2f98",
+  "name" : "subtitle",
   "display_width" : null,
-  "label" : "Content",
+  "label" : "Subtitle",
   "required" : false,
   "locked" : false,
-  "type" : "richtext",
-  "default" : "We are confident that we offer the best value pricing in the industry, however, if you find a better price or a similar service – we’ll beat it by 10%."
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "HOW TO SELL SHARES"
+}, {
+  "id" : "edc5e0c0-bd92-0ff6-8b98-4d79b73685b5",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "help_text" : "Logo or Image in right side",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://6891566.fs1.hubspotusercontent-na1.net/hubfs/6891566/Share%20Sales%20Direct/SSD%20logo%20icon.svg",
+    "alt" : "SSD logo icon",
+    "loading" : "disabled",
+    "width" : 291,
+    "height" : 166,
+    "max_width" : 291,
+    "max_height" : 166
+  }
 } ]

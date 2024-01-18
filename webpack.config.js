@@ -53,7 +53,7 @@ const hubspotConfig = ({ portal, autoupload } = {}) => {
         portal,
         autoupload,
         src: 'dist',
-        dest: 'dev-demo/hubspot-react-module-leads',
+        dest: 'dev-demo/hubspot-react-module-ssd',
       }),
       new MiniCssExtractPlugin({
         filename: '[name].css',
