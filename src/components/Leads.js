@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReactHtmlParser from 'react-html-parser';
 
 function Leads({ moduleInstance, moduleData }) {
   return (
@@ -21,7 +22,7 @@ function Leads({ moduleInstance, moduleData }) {
                   {moduleData.title}
                 </h2>
                 <div className="module-content mt-sm-0 pt-sm-0 mt-5 pt-4">
-                  {moduleData.content}
+                  {ReactHtmlParser(moduleData.content)}
                 </div>
               </div>
             </div>

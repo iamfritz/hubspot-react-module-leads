@@ -1,0 +1,160 @@
+#ssd-faq {}
+#ssd-faq .container-title {}
+#ssd-faq #faqs {
+  margin-top: 15px;
+}
+#ssd-faq #faqs .faq-nav .nav-link{
+  font-size: 21px;
+  padding-left: 20px; padding-right: 20px;
+  margin-bottom: 4px;
+}
+#ssd-faq #faqs .faq-nav .nav-link.active, 
+#ssd-faq #faqs .faq-nav .nav-link:hover{
+  color: #FFF;
+  background: #76CF7A;
+  border-radius: 65px;  
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+#ssd-faq .dropdown-toggle {
+  font-size: 21px;
+  padding-left: 20px;
+  padding-right: 20px;  
+  background: #FFF;
+  color: #3015A0;
+}
+#ssd-faq .dropdown-toggle:focus {
+  outline: none;
+}
+#ssd-faq .dropdown-toggle::after {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-family: 'FontAwesome';
+    content: "\f078";
+    float: right;
+    color: #3015A0;
+    border: none;
+}
+
+#ssd-faq #faqs .dropdown-menu .faq-nav .nav-link.active, 
+#ssd-faq #faqs .dropdown-menu .faq-nav .nav-link:hover{
+  border-radius: 0;  
+}
+#ssd-faq #faqs .card { 
+  border: none; border-radius: 0;
+  border-top: 1px solid #3015A0; 
+  background: none;
+}
+#ssd-faq #faqs .card:last-child { 
+  border-bottom: 1px solid #3015A0; 
+}
+#ssd-faq #faqs .card-header .btn {
+  padding: 7px 40px 7px 37px;
+}
+#ssd-faq #faqs .card-header .btn.collapsed {
+  padding: 7px 40px 16px 37px;
+}
+#ssd-faq #faqs .card-body {
+  padding-left: 10px; padding-right: 10px;
+}
+#ssd-faq #faqs .card-body li{
+  padding:10px 0px;
+}
+#ssd-faq #faqs .card-header > a {
+  font-size: 27px;
+  letter-spacing: -0.81px;
+  position: relative;
+}
+#ssd-faq #faqs .card-header > a:hover {
+  text-decoration:none;
+}
+#ssd-faq #faqs .card-body {
+  font-size: 22px;
+  letter-spacing: -0.66px;
+  line-height: 29px;
+}
+#ssd-faq #faqs .card-body table td{
+  padding-left: 8px;
+  padding-right: 8px;
+}
+#ssd-faq #faqs .card-header > a .faq-q{
+  position: absolute;  
+  left: 0;
+}
+
+#ssd-faq #faqs .accordion .card-header > a:after {
+  font-family: 'FontAwesome';  
+  content: "\f077";
+  float: right; 
+  color: #76CF7A;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+#ssd-faq #faqs .accordion .card-header > a.collapsed:after {
+   content: "\f078"; 
+}
+
+@media (max-width: 1024px) {
+  #ssd-faq .module-subtitle {
+    margin-bottom: 15px !important;
+  }
+}
+
+@media (min-width: 768px) {
+
+  #ssd-faq #faqs .dropdown-menu {
+    display: block;
+    position: inherit;
+    background: none;
+    border: 0;
+  }
+  #ssd-faq #faqs .dropdown-menu > .faq-nav {
+    width: max-content;
+  }
+  #ssd-faq #faqs .dropdown-menu .faq-nav .nav-link.active, 
+  #ssd-faq #faqs .dropdown-menu .faq-nav .nav-link:hover{
+      border-radius: 65px;
+  }   
+}
+
+@media (max-width: 1024px) {
+
+  #ssd-faq #faqs .faq-nav .nav-link {
+    font-size: 18px;
+    line-height: 21px;
+  }  
+  #ssd-faq #faqs .card-header > a {
+    font-size: 20px;
+    letter-spacing: -0.6px;
+    line-height: 40px;
+    position: relative;
+  }  
+}
+
+@media (max-width: 767px) {
+  #ssd-faq .dropdown-toggle {
+    font-size: 26px;
+    letter-spacing: -1.27px;
+    margin-bottom: 45px;
+  }  
+  #ssd-faq #faqs .card-header > a {
+    font-size: 23px;
+    font-weight: 500;
+    font-style: normal;    
+  } 
+  #ssd-faq #faqs .card .card-body {
+    margin-top: 14px;
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 23px
+  }
+  #ssd-faq #faqs .faq-nav .nav-link{
+    font-size: 26px;
+    font-weight: 500;
+    font-style: normal;  
+  }  
+}

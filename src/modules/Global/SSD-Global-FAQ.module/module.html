@@ -1,0 +1,76 @@
+{{ require_css(get_asset_url('../../main.css')) }}
+{{ require_js(get_asset_url('../../main.js'), 'footer') }}
+{%- set instance_id = name %}
+
+<div class="cms-react-boilerplate">
+  <script type="application/json"
+    data-module-name="Faqs"
+    data-module-instance="{{ instance_id }}"
+    data-portal-id="{{ portal_id }}">
+      {{ module|tojson }}
+  </script>
+  <div id="App--{{ instance_id }}"></div>
+</div>
+
+
+<!-- <div id="ssd-faq" class="custom-module module__{{ name }} txt-blue py-5 text-left Graphik-Regular-Web bg-lighterGray" > 
+    <div class="container my-2 pt-4 container-title">
+      <h2 class="module-subtitle txt-green mb-0 mb-sm-2 Graphik-Semibold-Web">{{ module.subtitle }}</h2>
+      <h3 class="module-title mb-4 Graphik-Semibold-Web">{{ module.title }}</h3>    
+    </div>
+  
+    <div class="container pt-0 pt-sm-5 mb-5">
+      <div id="faqs" class="row">
+        <div class="col-md-3">
+            <div class="dropdown mb-4" id="faqmobilemenu">
+                <a class="d-block d-md-none btn dropdown-toggle w-100 text-left p-3" href="#" role="button" id="faqMenu" data-toggle="dropdown" >
+                  FAQ ...
+                </a>
+              
+                <div class="dropdown-menu w-100 txt-blue py-0" >
+                    <div class="nav nav-pills faq-nav flex-sm-column" id="faq-tabs2" role="tablist" >                   
+                        {% for item in module.faqs %}
+                            <a href="#faq{{ loop.index }}" class="w-100 d-block nav-link {{ loop.index == 1 ? "active" : "" }} Graphik-Semibold-Web txt-blue" data-toggle="pill" role="tab" >
+                                {{ item.category }}
+                            </a>
+                        {% endfor %}                
+                    </div>                    
+                </div>
+            </div>            
+        </div>
+        <div class="col-md-9">
+            COMPONENT
+            <div class="tab-content" id="faq-tab-content">
+            
+            {% for item in module.faqs %}
+                {% set tab = loop.index %}
+                
+                <div class="tab-pane {{ loop.index == 1 ? "show active" : "" }}" id="faq{{ loop.index }}" role="tabpanel" >
+                    {% set faqAccordion = "faq-tab-"+tab %}
+                    <div class="accordion" id="{{ faqAccordion }}">                                                
+                        {% for item2 in item.faq %}
+                        COMPONENT
+                        <div class="card">
+                            <div class="card-header p-0 border-0 bg-transparent" id="accordion-tab-1-heading-{{ loop.index }}">
+                                <a class="btn btn-link w-100 text-left txt-blue Graphik-Semibold-Web  {{ loop.index != 1 ? " collapsed" : "" }} " type="button" data-toggle="collapse" data-target="#{{ faqAccordion }}-content-{{ loop.index }}" >
+                                    <span class="faq-q">Q:</span> {{ item2.question }}
+                                </a>
+                            </div>
+                            <div class="collapse {{ loop.index == 1 ? "show" : "" }}" id="{{ faqAccordion }}-content-{{ loop.index }}"  data-parent="#{{ faqAccordion }}">
+                                <div class="card-body pt-0 pl-0 ml-1 mb-2">
+                                    {{ item2.answer }}
+                                </div>
+                            </div>
+                        </div>  
+                        {% endfor %}
+                    </div>
+                </div>              
+            {% endfor %}                   
+                
+            </div>
+        </div>
+    </div>    
+    </div>   
+</div>
+
+ -->

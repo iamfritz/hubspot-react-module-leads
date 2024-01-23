@@ -1,0 +1,64 @@
+#ssd-lead-cta {
+  min-height: 285px;
+  padding-top: 66px;
+  padding-bottom: 66px;
+}
+#ssd-lead-cta .module-content {
+  font-size: 30px;
+  letter-spacing: -0.9px;
+}
+#ssd-lead-cta .module-content a{
+  color: #76CF7B;  
+}
+#ssd-lead-cta .btn-cta {
+  min-width: 257px; 
+  min-height: 53px;
+  font-size: 22px;
+}
+#ssd-lead-cta .btn-cta .fa{
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  #ssd-lead-cta .btn-cta {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 23px;
+    min-height: 70px;
+    padding-bottom: 12px;
+    padding-top: 12px;    
+  }
+  #ssd-lead-cta .module-content {
+    font-size: 23px;
+    letter-spacing: -1px;
+  }  
+  .module-icon {
+    width: 96px !important; 
+    height: 129px !important;
+  }    
+}
+
+@media (min-width: 767px) {
+  #ssd-lead-cta .module-icon {
+      max-width: 71px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  #ssd-lead-cta {
+    min-height: 268px;
+    padding-top: 78px;
+  }
+  #ssd-lead-cta .module-content {
+    font-size: 24px;
+    letter-spacing: -0.72px;
+  }
+  #ssd-lead-cta .module-title {
+    margin-bottom: 5px !important;
+  }
+  #ssd-lead-cta .btn-cta {
+    min-width: auto;
+    height: auto;
+  }
+}
+

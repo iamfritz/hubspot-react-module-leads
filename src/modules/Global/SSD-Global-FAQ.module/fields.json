@@ -1,0 +1,118 @@
+[ {
+  "id" : "774e23e0-3cea-8f4a-5607-5b171bafa322",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Questions you may have"
+}, {
+  "id" : "183f823d-d578-5a53-6506-03390ca39acb",
+  "name" : "subtitle",
+  "display_width" : null,
+  "label" : "Subtitle",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "FAQ"
+}, {
+  "id" : "e6cd31ca-09ca-f7ab-58b8-c9d71ba0ffea",
+  "name" : "faqs",
+  "display_width" : null,
+  "label" : "FAQs",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "aa7398c3-9845-f730-79a6-913fe898043e",
+    "name" : "category",
+    "display_width" : null,
+    "label" : "Category",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "The company"
+  }, {
+    "id" : "9c5049d5-56f3-061e-1d1a-a028bcb742c3",
+    "name" : "faq",
+    "display_width" : null,
+    "label" : "FAQ",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "e3e30889-9cc4-81fb-3962-22a47cba7444",
+      "default" : 2
+    },
+    "children" : [ {
+      "id" : "e3e30889-9cc4-81fb-3962-22a47cba7444",
+      "name" : "question",
+      "display_width" : null,
+      "label" : "Question",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Who is Share Sales Direct?"
+    }, {
+      "id" : "4ba07894-08a0-a4e1-3831-87809e8c6902",
+      "name" : "answer",
+      "display_width" : null,
+      "label" : "Answer",
+      "required" : true,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "Share Sales Direct is an Australian-owned and operated financial services business with offices in Sydney and Melbourne’s CBD. We offer one-off share sales through a simple, secure, and fast process designed for Australian residents."
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "question" : "Who is Share Sales Direct?",
+      "answer" : "Share Sales Direct is an Australian-owned and operated financial services business with offices in Sydney and Melbourne’s CBD. We offer one-off share sales through a simple, secure, and fast process designed for Australian residents."
+    }, {
+      "question" : "Who is Share Sales Direct?",
+      "answer" : "Share Sales Direct is an Australian-owned and operated financial services business with offices in Sydney and Melbourne’s CBD. We offer one-off share sales through a simple, secure, and fast process designed for Australian residents."
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "category" : "The company",
+    "faq" : [ {
+      "question" : "Who is Share Sales Direct?",
+      "answer" : "Share Sales Direct is an Australian-owned and operated financial services business with offices in Sydney and Melbourne’s CBD. We offer one-off share sales through a simple, secure, and fast process designed for Australian residents."
+    }, {
+      "question" : "Who is Share Sales Direct?",
+      "answer" : "Share Sales Direct is an Australian-owned and operated financial services business with offices in Sydney and Melbourne’s CBD. We offer one-off share sales through a simple, secure, and fast process designed for Australian residents."
+    } ]
+  }, {
+    "category" : "The company",
+    "faq" : [ {
+      "question" : "Who is Share Sales Direct?",
+      "answer" : "Share Sales Direct is an Australian-owned and operated financial services business with offices in Sydney and Melbourne’s CBD. We offer one-off share sales through a simple, secure, and fast process designed for Australian residents."
+    }, {
+      "question" : "Who is Share Sales Direct?",
+      "answer" : "Share Sales Direct is an Australian-owned and operated financial services business with offices in Sydney and Melbourne’s CBD. We offer one-off share sales through a simple, secure, and fast process designed for Australian residents."
+    } ]
+  } ]
+} ]

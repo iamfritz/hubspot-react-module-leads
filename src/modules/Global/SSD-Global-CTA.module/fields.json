@@ -1,0 +1,97 @@
+[ {
+  "id" : "edc5e0c0-bd92-0ff6-8b98-4d79b73685b5",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://6891566.fs1.hubspotusercontent-na1.net/hubfs/6891566/Share%20Sales%20Direct/icon-secure.svg",
+    "alt" : "icon-secure",
+    "loading" : "disabled",
+    "width" : 96,
+    "height" : 129,
+    "max_width" : 96,
+    "max_height" : 129
+  }
+}, {
+  "id" : "774e23e0-3cea-8f4a-5607-5b171bafa322",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Ready to get started?"
+}, {
+  "id" : "be9afa7b-59a5-8802-1c43-656781d9b793",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "default" : "If you need a bit more help Call <a href=\"tel:1300092575\" rel=\"noopener\">1300 092 575</a>"
+}, {
+  "id" : "db9e43b8-1dfc-df34-0089-cdcf0a2b85c4",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Button",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "bd48251f-4084-52ee-0070-7c3e9bbaec18",
+    "name" : "button_label",
+    "display_width" : null,
+    "label" : "Button Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Sell Your Shares"
+  }, {
+    "id" : "154c348e-ab84-01c9-47da-9152dd42a9d1",
+    "name" : "button_url",
+    "display_width" : null,
+    "label" : "Button URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : 149666161470,
+        "href" : null,
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_label" : "Sell Your Shares",
+    "button_url" : {
+      "url" : {
+        "content_id" : 149666161470,
+        "href" : null,
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]
