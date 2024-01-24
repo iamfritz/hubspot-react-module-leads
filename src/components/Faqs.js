@@ -3,8 +3,7 @@ import ReactHtmlParser from 'react-html-parser';
 import SectionTitle from './SectionTitle';
 import FaqTab from './FaqsTab';
 
-function Faqs({ moduleInstance, moduleData }) {
-  console.table(moduleData);
+function Faqs({ moduleInstance, moduleData }) {  
 
   let faqList = moduleData.faqs;
 

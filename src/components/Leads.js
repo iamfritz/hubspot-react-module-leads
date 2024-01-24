@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactHtmlParser from 'react-html-parser';
+import SingleTitle from './SectionSingleTitle';
 
 function Leads({ moduleInstance, moduleData }) {
   return (
@@ -18,9 +19,8 @@ function Leads({ moduleInstance, moduleData }) {
             </div>
             <div className="col-md-9">
               <div className="ml-0 mt-2 ml-md-5 pl-md-3 mr-0 mr-md-5 pr-2 pl-0">
-                <h2 className="module-title mb-4  mt-5 pt-2 mt-sm-0 pt-sm-0">
-                  {moduleData.title}
-                </h2>
+                <SingleTitle title={moduleData.title} />
+
                 <div className="module-content mt-sm-0 pt-sm-0 mt-5 pt-4">
                   {ReactHtmlParser(moduleData.content)}
                 </div>

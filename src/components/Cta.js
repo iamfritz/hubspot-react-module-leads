@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactHtmlParser from 'react-html-parser';
-import {Link} from 'react-router-dom';
+import SingleTitle from './SectionSingleTitle';
 import Button from './Button';
 
 
@@ -21,22 +21,16 @@ function Cta({ moduleInstance, moduleData }) {
             </div>
             <div className="col-md-9 col-lg-7">
               <div className="h-100 my-auto ml-0 ml-md-4">
-                <h2 className="module-title mb-4  mt-5 pt-2 mt-sm-0 pt-sm-0">
-                  {moduleData.title}
-                </h2>
+                <SingleTitle title={moduleData.title} />
+
                 <div className="module-content Graphik-Semibold-Web mt-sm-0 pt-sm-0 mt-5 pt-4">
                   {ReactHtmlParser(moduleData.content)}
                 </div>
               </div>
             </div>
             <div className="col-md-12 col-lg-3 h-100 my-auto text-center text-sm-right">
-              <a
-                className="btn btn-cta b-dark"
-                href={moduleData.button.button_url.url.href}
-              >
-                {moduleData.button.button_label}
-                <i className="ml-1 fa fa-arrow-right" aria-hidden="true"></i>
-              </a>
+              <Button buttonLabel={moduleData.button.button_label} buttonUrl={moduleData.button.button_url.url.href} />
+              
             </div>
           </div>
         </div>

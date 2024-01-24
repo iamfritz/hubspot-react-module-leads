@@ -15,13 +15,16 @@ function Button(_ref) {
       buttonUrl = _ref.buttonUrl,
       _ref$bClass = _ref.bClass,
       bClass = _ref$bClass === void 0 ? '' : _ref$bClass;
-  var buttonClass = "btn btn-cta b-dark " + bClass;
+  var buttonClass = 'btn btn-cta b-dark ' + bClass;
   return '';
   /* return (
-    <Link className={buttonClass} to={buttonUrl}>
-      {buttonLabel} {buttonUrl} {buttonClass}
-      <i className="ml-1 fa fa-arrow-right" aria-hidden="true"></i>
-    </Link>
+              <a
+                className="btn btn-cta b-dark"
+                href={moduleData.button.button_url.url.href}
+              >
+                {moduleData.button.button_label}
+                <i className="ml-1 fa fa-arrow-right" aria-hidden="true"></i>
+              </a>
   ); */
 }
 
