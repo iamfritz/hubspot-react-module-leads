@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-function SectionTitle({ title, subtitle }) {
+const SectionTitle = ({ title, subtitle })  => {
+  
   return (
     <div class="container my-2 pt-4 container-title">
       <h2 class="module-subtitle txt-green mb-0 mb-sm-2 Graphik-Semibold-Web">

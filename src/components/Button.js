@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Button({ buttonLabel, buttonUrl, bClass = '' }) {
+const Button = ({ buttonLabel, buttonUrl, bClass = '' }) => {
   var buttonClass = 'btn btn-cta b-dark ' + bClass;
 
  return (
