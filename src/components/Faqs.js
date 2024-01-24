@@ -39,7 +39,7 @@ function Faqs({ moduleInstance, moduleData }) {
                         
                         return (
                           <a
-                            href={"#faq"+index}
+                            href={"#faq"+(index+1)}
                             className={
                               (index == 0 ? ' active' : '') +
                               ' w-100 d-block nav-link Graphik-Semibold-Web txt-blue'

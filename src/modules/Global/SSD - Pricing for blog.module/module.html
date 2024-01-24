@@ -1,0 +1,53 @@
+<div id="ssd-pricing" class="custom-module module__{{ name }}   txt-blue  text-left">
+    <div class="container my-2 pt-5 container-title">
+        <h2 class="module-subtitle txt-green mb-0 mb-sm-2 Graphik-Semibold-Web">{{ module.subtitle }}</h2>
+        <h3 class="module-title mb-4 Graphik-Semibold-Web">{{ module.title }}</h3>
+    </div>
+    <div id="price-container" class="container">        
+        <div id="price-group" class="card-group ">
+            <div class="card mb-0 bg-white border-left-0 border-top-0 border-bottom-0 b-blue">
+                <div class="card-header bg-gold pt-4 px-sm-4 px-0">
+                    <h3 class="card-title txt-22 pt-2 px-3 Graphik-Semibold-Web">{{ module.gold.price_name }}</h3>
+                </div>
+                <div class="card-body px-0">
+                    <div class="card-text pt-2">
+                        <div class="px-sm-4 mx-sm-2  px-3 mx-0 card-label">
+                            <span class="h4 Graphik-Semibold-Web">{{ module.gold.price }}</span>
+                            <span>{{ module.gold.price_label }}</span>
+                        </div>
+                        <div class="card-description txt-22">
+                            <div class="p-sm-4 mx-sm-2 p-3 mx-0">
+                                {{ module.gold.price_description }} {{ module.gold.cta }}
+                                <a class="btn btn-cta txt-blue mt-3" href="{{ module.gold.button.button_url.url.href }}">
+                                {{ module.gold.button.button_label }}
+                                </a>                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-0 bg-white border-0">
+                <div class="card-header bg-platinum pt-4 px-sm-4 px-0">
+                    <h3 class="card-title txt-22 pt-2 px-3 Graphik-Semibold-Web">{{ module.platinum.price_name }}</h3>
+                </div>
+                <div class="card-body px-0">
+                    <div class="card-text pt-2">
+                        <div class="px-sm-4 mx-sm-2  px-3 mx-0 card-label">
+                            <span class="h4 Graphik-Semibold-Web">{{ module.platinum.price }}</span>
+                            <span>{{ module.platinum.price_label }}</span>
+                        </div>
+                        <div class="card-description txt-22">
+                            <div class="p-sm-4 mx-sm-2 p-3 mx-0">
+                                {{ module.platinum.price_description }} {{ module.platinum.cta }}
+                                <a class="btn btn-cta txt-blue mt-3" href="{{ module.platinum.button.button_url.url.href }}">
+                                {{ module.platinum.button.button_label }}
+                                </a>                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-5 content-description px-3 px-sm-0">{{ module.description }}</div>
+    </div>
+</div>

@@ -19,7 +19,7 @@ const Accordion = ({ itemIndex, faqAccordion, item }) => {
           data-toggle="collapse"
           data-target={'#' + faqAccordion + '-content-' + itemIndex}
         >
-          <span className="faq-q">Q:</span> {item.question}
+          <span className="faq-q">Q:</span> {ReactHtmlParser(item.question)}
         </a>
       </div>
       <div
@@ -27,7 +27,7 @@ const Accordion = ({ itemIndex, faqAccordion, item }) => {
         id={faqAccordion + '-content-' + itemIndex}
         data-parent={'#' + faqAccordion}
       >
-        <div className="card-body pt-0 pl-0 ml-1 mb-2">{item.answer}</div>
+        <div className="card-body pt-0 pl-0 ml-1 mb-2">{ReactHtmlParser(item.answer)}</div>
       </div>
     </div>
   );
